@@ -15,7 +15,7 @@ fi
 
 download=false
 this_dir=`pwd`
-vela_host="https://pythianvela.com"
+vela_host="https://app.tehama.io"
 zip_file="gatewayagent.zip"
 download_path="${vela_host}/${zip_file}"
 program="${this_dir}/agent"
