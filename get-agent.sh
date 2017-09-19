@@ -15,9 +15,9 @@ fi
 
 download=false
 this_dir=`pwd`
-vela_host="https://app.tehama.io"
+tehama_host="https://app.tehama.io"
 zip_file="gatewayagent.zip"
-download_path="${vela_host}/${zip_file}"
+download_path="${tehama_host}/${zip_file}"
 program="${this_dir}/agent"
 
 rclocal=
@@ -44,7 +44,7 @@ unzipexists=$?
 function usage() {
     echo
     echo "Usage: $0 [-d] [-h]"
-    echo "    -d: Download and install the latest agent from Vela. If not provided, this script assumes"
+    echo "    -d: Download and install the latest agent from Tehama. If not provided, this script assumes"
     echo "    that it is in the directory with contents of the unzipped agent"
     echo
     echo "    -h: Print this help text and exit"
@@ -74,7 +74,7 @@ function do_download() {
     # Backup the zip file if it exists
     mv -f "$zip_file" "${zip_file}.`date +'%s'`.bak"
 
-    # Download the agent zip file from Vela
+    # Download the agent zip file from Tehama
     if [ $wgetexists -eq 0 ]; then
         wget "$download_path"
     else
@@ -163,7 +163,7 @@ if [ -f "$secret_file" ]; then
 else
     while true
     do
-        read -p $'\e[01;33mPlease paste your Vela Room key here and press enter:  \e[0m' key    
+        read -p $'\e[01;33mPlease paste your Tehama Room key here and press enter:  \e[0m' key    
         read -p $'\e[01;33mAre you sure this secret is correct? (y/n)  \e[0m' answer    
         if [ "$answer" == "y" ] || [ "$answer" == "yes" ];
         then
