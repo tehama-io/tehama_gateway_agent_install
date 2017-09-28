@@ -1,6 +1,6 @@
 # tehama_gateway_agent_install
 
-Requirements:  Tehama invitation, Linux host (Ubuntu 14.04  / CentOS 7.3 / Amazon AMI 2017.3 / Red Hat Enterprise Server 7.3 / Fedora 25)
+Minimum Requirements:  Tehama invitation, Linux host (Ubuntu 14.04  / CentOS 7.3 / Amazon AMI 2017.3 / Red Hat Enterprise Server 7.3 / Fedora 25)
 
 -=Instructions=-
 
