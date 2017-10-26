@@ -11,9 +11,7 @@ Enter the tehama folder, type:   <b>cd tehama</b>
 Download the install script, type:   
 <b>wget https://raw.githubusercontent.com/pythian/tehama_gateway_agent_install/master/get-agent.sh</b>
 
-Make the script executable, type:   <b>chmod +x get-agent.sh</b>
-
-Set permissions (if needed):   <b>chmod 755 get-agent.sh</b>
+Set permissions:   <b>chmod 755 get-agent.sh</b>
 
 Run the install script as root:   <b>sudo ./get-agent.sh -d</b>
 
