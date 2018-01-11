@@ -1,6 +1,16 @@
 # tehama_gateway_agent_install
 
-Minimum Requirements:  Tehama invitation, Linux host (Ubuntu 14.04  / CentOS 7.3 / Amazon AMI 2017.3 / Red Hat Enterprise Server 7.3 / Fedora 25)
+Minimum requirements: 
+
+Linux Host:
+Minimum OS:  Ubuntu 14.04, CentOS 7.3, Amazon AMI 2017.3, Red Hat Enterprise Server 7.3 or Fedora 25 
+Minimum hardware/VM config:  Dual Core CPU, 4GB Ram, 1GB HDD 
+Wired network connectivity
+
+Firewall Exception (outbound)
+
+TCP ports: 22, 80 and 443
+UDP:  ICMP outbound 
 
 -=Instructions=-
 
