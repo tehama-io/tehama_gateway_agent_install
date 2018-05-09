@@ -15,7 +15,7 @@ echo "For more information, please visit the support site at - https://app.teham
 echo "Do you have questions or concenrs?  Please email, suppport@tehama.io"
 echo ""
 echo "To install the latest version of the Tehama Gatway please use the following command:"
-echo -e "\e[01;33mwget https://tehama.io/geteway.zip\e[0m"
+echo -e "\e[01;33mwget https://tehama.io/get-gateway.sh\e[0m"
 echo ""
 echo ""
 exit 0
