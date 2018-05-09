@@ -34,6 +34,7 @@ Enter the tehama folder, type:   <b>cd tehama</b>
 
 Download the install script, type:   
 <b>wget https://raw.githubusercontent.com/pythian/tehama_gateway_agent_install/master/get-agent.sh</b>
+
 after May 10, 2018:  <b>https://tehama.io/get-gateway.sh</b>
 
 Set permissions:   <b>chmod 755 get-agent.sh</b>
