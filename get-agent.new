@@ -1,5 +1,5 @@
 #!/bin/bash
-#v1.0
+#v0.1
 # Link no longer exists
 #
 #
@@ -16,4 +16,6 @@ echo "Do you have questions or concenrs?  Please email, suppport@tehama.io"
 echo ""
 echo "To install the latest version of the Tehama Gatway please use the following command:"
 echo -e "\e[01;33mwget https://tehama.io/geteway.zip\e[0m"
+echo ""
+echo ""
 exit 0
