@@ -18,4 +18,4 @@ echo "To install the latest version of the Tehama Gatway please use the followin
 echo -e "\e[01;33mwget https://tehama.io/get-gateway.sh\e[0m"
 echo ""
 echo ""
-exit 0
+exit 1
