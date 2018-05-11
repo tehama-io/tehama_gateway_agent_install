@@ -20,7 +20,7 @@ Create a folder for the Tehama Gateway  (ensure folder is not in the /tmp direct
 
 Enter the tehama folder, type: cd tehama
 
-Download the install script, type: wget https://app.tehama.io/get-gateway.sh
+Download the install script, type: <b>wget https://app.tehama.io/get-gateway.sh</b>
 
 Set permissions: <b>chmod 755 get-gateway.sh</b>
 
