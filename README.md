@@ -1,6 +1,6 @@
 # tehama_gateway_agent_install
 
-On May 10, 2018, Support for agent.sh will end
+On May 11, 2018, Support for the legacy get-agent.sh has eneded.
 The new version 'get-gateway.sh' is now found on Tehama.io
 
 'get-agent.sh' customers will no longer receive updates or critical patches to the legacy 'Tehama Gateway Agent'
@@ -10,7 +10,7 @@ For more information, please visit the support site at - https://app.tehama.io/d
 Do you have questions or concenrs?  Please email, suppport@tehama.io
 
 To install the latest version of the Tehama Gatway please use the following command:
-wget https://tehama.io/get-gateway.sh
+wget https://app.tehama.io/get-gateway.sh
 
 
 
@@ -32,14 +32,11 @@ Create a folder for the Tehama Gateway Agent (ensure folder is not in the /tmp d
 
 Enter the tehama folder, type:   <b>cd tehama</b>
 
-Download the install script, type:   
-<b>wget https://raw.githubusercontent.com/pythian/tehama_gateway_agent_install/master/get-agent.sh</b>
+Download the install script, type:  <b>wget https://app.tehama.io/get-gateway.sh</b>
 
-after May 10, 2018:  <b>wget https://tehama.io/get-gateway.sh</b>
+Set permissions:   <b>chmod 755 get-gateway.sh</b>
 
-Set permissions:   <b>chmod 755 get-agent.sh</b>
-
-Run the install script as root:   <b>sudo ./get-agent.sh -d</b>
+Run the install script as root:   <b>sudo ./get-gateway.sh -d</b>
 
 Paste in the key when prompted and press enter.  The key can be found on the Connection Tab on the Tehama website
 
