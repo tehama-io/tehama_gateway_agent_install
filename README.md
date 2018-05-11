@@ -24,7 +24,7 @@ Download the install script, type:   <b>wget https://app.tehama.io/get-gateway.s
 
 Set permissions:  <b>chmod 755 get-gateway.sh</b>
 
-Run the install script:   <b>./get-gateway.sh -d</b>
+Run the install script:   <b>./get-gateway.sh</b>
 
 Paste in the key when prompted and press enter. The key can be found on the Connection Tab on the Tehama website
 
