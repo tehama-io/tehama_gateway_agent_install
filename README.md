@@ -20,11 +20,11 @@ Create a folder for the Tehama Gateway  (ensure folder is not in the /tmp direct
 
 Enter the tehama folder, type: cd tehama
 
-Download the install script, type: <b>wget https://app.tehama.io/get-gateway.sh</b>
+Download the install script, type:   <b>wget https://app.tehama.io/get-gateway.sh</b>
 
-Set permissions: <b>chmod 755 get-gateway.sh</b>
+Set permissions:  <b>chmod 755 get-gateway.sh</b>
 
-Run the install script: <b>./get-gateway.sh -d</b>
+Run the install script:   <b>./get-gateway.sh -d</b>
 
 Paste in the key when prompted and press enter. The key can be found on the Connection Tab on the Tehama website
 
