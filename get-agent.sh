@@ -5,7 +5,7 @@
 #
 echo ""
 echo ""
-echo -e "\u001b[31;1mAs of May 10, 2018, Support for agent.sh has ended\e[0m"
+echo -e "\u001b[31;1mAs of May 10, 2018, Support for get-agent.sh has ended\e[0m"
 echo "The new version 'get-gateway.sh' is now found on Tehama.io"
 echo ""
 echo "'get-agent.sh' customers will no longer receive updates or critical patches to the legacy 'Tehama Gateway Agent'"
