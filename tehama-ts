@@ -1,0 +1,44 @@
+#!/bin/bash
+
+TEHAMA="https://app.tehama.io/version"
+
+HOST=$1
+
+if [ -z "$HOST" ]; then
+    echo "<ip address> parameter is required."
+    echo "Please run '$0 <ip address>'"
+    echo
+    exit 1
+fi
+
+echo "TESTING: connection to $TEHAMA"
+curl -s --connect-timeout 5 $TEHAMA >> /dev/null
+if [ $? -ne 0 ]; then
+    echo "FAILURE: connection to $TEHAMA failed. Check your outbound firewall rules for secure web requests over https"
+else
+    echo "SUCCESS: $TEHAMA is reachable from the gateway"
+fi
+
+
+echo "TESTING: ping (ICMP) request to $HOST"
+ping -c 1 $HOST > /dev/null
+if [ $? -ne 0 ]; then
+    echo "FAILURE: Host $HOST was not reachable using ping. Check BOTH outbound and incoming firewall rules for ICMP traffic"
+else
+    echo "SUCCESS: ping to host $HOST was successful"
+fi
+
+
+echo "TESTING: ssh connectivity to $HOST (port 22)"
+SSH_STATUS=$(ssh -o BatchMode=yes -o ConnectTimeout=5 $HOST 2>&1)
+TIMED_OUT=$(echo $SSH_STATUS | grep -i "Operation timed out")
+PERMISSION_DENIED=$(echo $SSH_STATUS | grep -i "Permission denied")
+if [ ! -z "$TIMED_OUT"  ]; then
+    echo "FAILURE: cannot establish ssh connection to host $HOST on port 22. Check your firewall for outbound ssh requests (port 22)."
+elif [ ! -z "$PERMISSION_DENIED" ]; then
+    echo "SUCCESS: ssh connection to $HOST was successful"
+else
+    echo "FAILURE: unknown error: SSH_STATUS"
+fi
+echo "COMPLETE: connectivity test is complete. Examine the test results for 'FAILURE' messages and resolve any issues."
+
